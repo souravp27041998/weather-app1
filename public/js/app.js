@@ -11,7 +11,7 @@ message_1.textContent='Loading...';
 message_2.textContent='';
 const location1=search.value;
 console.log('searching weather for location : ',location1);
-    fetch(`http://localhost:3000/weather?address=${location1}`).then((response)=>{
+    fetch(`/weather?address=${location1}`).then((response)=>{
         response.json().then((data)=>{
 
             if(data.error){
